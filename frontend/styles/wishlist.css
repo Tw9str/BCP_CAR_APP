@@ -1,0 +1,101 @@
+.wishlist {
+  position: fixed;
+  padding: 40px 0;
+  width: 0;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: var(--main-color);
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.15) -3px 0px 3px 0px;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  overflow-y: auto;
+}
+.wishlist.open {
+  width: 320px;
+  opacity: 1;
+  visibility: visible;
+}
+.wishlist .wishlist-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 32px;
+}
+.wishlist .wishlist-container .wishlist-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.wishlist .wishlist-container .wishlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 288px;
+  gap: 8px;
+}
+.wishlist .wishlist-container .wishlist-item .img-frame {
+  position: relative;
+  flex: 0 0 80px;
+  aspect-ratio: 16 / 9;
+}
+.wishlist .wishlist-container .wishlist-item .img-frame img {
+  object-fit: fill;
+}
+.wishlist .wishlist-container .wishlist-item .item-details {
+  flex: 0 0 88px;
+}
+.wishlist .wishlist-container .wishlist-item .item-details .item-title {
+}
+.wishlist .wishlist-container .wishlist-item .item-details .item-price {
+}
+.wishlist .wishlist-container .wishlist-item .item-quantity {
+  flex: 0 0 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wishlist .wishlist-container .wishlist-overview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.wishlist .wishlist-container .wishlist-overview p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+}
+.wishlist .wishlist-container .wishlist-overview p:first-of-type {
+  border-bottom: 1px solid var(--secondary-color);
+}
+.wishlist .wishlist-container button:not(.checkout) {
+  font-size: 16px;
+  transition: .3s;
+}
+.wishlist .wishlist-container button:hover:not(.checkout) {
+  transform: scale(1.1);
+  color: var(--red-color);
+}
+.wishlist .wishlist-container .checkout {
+  background-color: var(--blue-color);
+  font-weight: 500;
+  transition: .3s;
+  padding: 16px;
+}
+.wishlist .wishlist-container .checkout:hover {
+  background-color: var(--dark-blue);
+  }

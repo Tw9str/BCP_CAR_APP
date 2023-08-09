@@ -1,0 +1,31 @@
+.review-form {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 340px;
+  height: 600px;
+}
+.review-form form input,
+.review-form form textarea {
+  width: 100%;
+  padding: 8px;
+}
+.review-form form textarea {
+  height: 300px;
+}
+.review-form form p {
+  color: var(--text-color);
+}
+.review-form form button[type="submit"] {
+  background-color: var(--blue-color);
+  padding: 8px 16px;
+  color: var(--text-color);
+}

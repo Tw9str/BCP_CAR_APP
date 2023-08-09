@@ -1,0 +1,24 @@
+.breadcrumb {
+  font-size: 14px;
+}
+.breadcrumb nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.breadcrumb nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.breadcrumb nav ul li:not(:first-child):not(:last-child),
+.breadcrumb nav ul svg:not(:last-of-type) {
+  color: var(--secondary-color);
+  transition: .3s;
+}
+.breadcrumb nav ul li:not(:first-child):not(:last-child):hover {
+  color: var(--blue-color);
+  text-decoration: underline;
+}

@@ -1,0 +1,113 @@
+/* Start login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+  font-size: 24px;
+  color: white;
+  background-color: var(--main-color);
+  background-image: linear-gradient(to left, #434343 0%, var(--main-color) 100%);
+}
+.login form input {
+  width: 280px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  caret-color: var(--blue-color);
+}
+.login form input:focus {
+  outline: none;
+}
+.login form .validation {
+  color: var(--red-color);
+}
+.login form button {
+  width: fit-content;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  border: none;
+}
+.login form p {
+  font-size: 16px;
+}
+.login form p a {
+  text-decoration: underline;
+  transition: .3s;
+}
+.login form p a:hover {
+  color: var(--blue-color);
+  text-decoration: none;
+}
+/* End login */
+/* Start Register */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+  font-size: 24px;
+  color: white;
+  background-image: linear-gradient(to left, #434343 0%, var(--main-color) 100%);
+}
+.register form input {
+  width: 280px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  caret-color: var(--blue-color);
+}
+.register form input:focus {
+  outline: none;
+}
+.register form .validation {
+  color: var(--red-color);
+}
+.register form button {
+  width: fit-content;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  border: none;
+}
+.register form p {
+  font-size: 16px;
+}
+.register form p a {
+  text-decoration: underline;
+  transition: .3s;
+}
+.register form p a:hover {
+  color: var(--blue-color);
+  text-decoration: none;
+}
+/* End Register */

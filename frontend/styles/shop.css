@@ -1,0 +1,196 @@
+.shop {
+  padding: 156px 0;
+  min-height: 100vh;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+.shop .container {
+  position: relative;
+  overflow: hidden;
+}
+.shop .container .panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop .container .heading {
+  font-size: 32px;
+  margin: 32px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.shop .container .products {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  transition: .3s;
+}
+.shop .container .products .product {
+  display: block;
+  overflow: hidden;
+  color: var(--text-color);
+  flex-shrink: 0;
+  width: calc(100% / 3 - 64px / 3);
+  border-bottom: 1px solid #454A4D;
+  transition: .3s;
+}
+@media (max-width: 991px) {
+  .shop .container .products .product {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 767px) {
+  .shop .container .products .product {
+    width: 100%;
+  }
+}
+.shop .products .product .img-frame {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+.shop .products .product .img-frame img {
+  display: block;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.shop .products .product .img-frame img:hover {
+  transform: scale(1.2);
+}
+.shop .products .product .img-frame .product-manage {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  transition: .3s;
+}
+.shop .products .img-frame:hover .product-manage {
+  top: 0;
+}
+.shop .products .product-manage button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  color: var(--btn-text);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.shop .products .product-manage button svg {
+  transition: .3s;
+}
+.shop .products .product-manage button:hover svg {
+  color: var(--red-color);
+  transform: scale(1.2);
+}
+.shop .products .product .img-frame .sold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.shop .products .product .product-details {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  gap: 8px;
+}
+.shop .products .product .product-title {
+  
+}
+.shop .products .product .product-title h1 {
+  text-transform: capitalize;
+}
+.shop .products .product .product-title h2 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.shop .products .product .product-details .price {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+.shop .products .product .product-details .checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop .products .product .product-details .checkout button {
+  color: var(--btn-text);
+}
+.shop .products .product .product-details button {
+  display: grid;
+  place-content: center;
+  height: 50px;
+  padding: 8px;
+  font-size: 32px;
+  border-radius: 8px;
+  flex: 0 0 calc(50% - 4px);
+  border: 2px solid var(--blue-color);
+  background-color: var(--blue-color);
+  transition: .3s;
+}
+.shop .products .product .product-details button:first-child {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: var(--blue-color);
+}
+.shop .products .product .product-details button:first-child:hover {
+  border: 2px solid var(--blue-color);
+}
+.shop .products .product .product-details button:last-child:hover {
+  background-color: transparent;
+  color: var(--blue-color);
+}
+.shop .container .products .plus-icon {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 420px;
+  width: calc(100% / 3 - 24px);
+  flex-shrink: 0;
+  transition: .3s;
+  font-size: 64px;
+  color: var(--blue-color);
+}
+@media (max-width: 991px) {
+  .shop .container .products .plus-icon {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 767px) {
+  .shop .container .products .plus-icon {
+    width: 100%;
+  }
+}
+.shop .container .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.shop .container .social div {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 32px auto 16px;
+}

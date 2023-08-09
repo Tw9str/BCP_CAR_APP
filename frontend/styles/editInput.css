@@ -1,0 +1,74 @@
+.edit-input {
+  position: absolute;
+  width: 280px;
+  z-index: 22;
+}
+.edit-input form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-input form input {
+  color: var(--btn-text);
+  padding: 8px;
+}
+.edit-input form input:not(input[type="submit"]) {
+  border: none;
+  height: 64px;
+  font-size: 16px;
+  background-color: var(--gray-color);
+}
+.edit-input form input:focus {
+  outline: none;
+}
+.edit-input form label {
+  cursor: pointer;
+  color: var(--btn-text);
+  background-color: var(--gray-color);
+  padding: 8px;
+  height: 64px;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.edit-input form input[type="file"] {
+  display: none;
+}
+.edit-input form .panel-btns {
+  display: flex;
+}
+.edit-input form .exit {
+  background-color: var(--gray-color);
+  color: var(--red-color);
+  flex: 0 0 50%;
+  padding: 8px;
+  transition: .3s;
+}
+.edit-input form .exit:hover {
+  background-color: var(--dark-red);
+}
+.edit-input form .exit svg {
+  transition: .3s;
+}
+.edit-input form .exit:hover svg {
+  transform: scale(1.2);
+  color: var(--red-color);
+}
+.edit-input form input[type="submit"] {
+  background-color: var(--blue-color);
+  font-size: 16px;
+  flex: 0 0 50%;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.edit-input form input[type="submit"]:hover {
+  background-color: var(--dark-blue);
+}
+.edit-input form p {
+  color: var(--text-color);
+  text-align: center;
+}

@@ -1,0 +1,117 @@
+/* Start add-form */
+.add-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+.add-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  margin: 128px auto 64px;
+  font-size: 24px;
+  color: white;
+  background-color: var(--main-color);
+  background-image: linear-gradient(to left, #434343 0%, var(--main-color) 100%);
+}
+.add-form form section {
+  width: 100%;
+  text-align: center;
+  border: 1px dashed var(--secondary-color);
+  border-radius: 16px;
+  font-size: 16px;
+}
+.add-form form section p {
+  padding: 24px;
+}
+.add-form form .thumbnails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.add-form form .thumbnails .thumbnail {
+  position: relative;
+}
+.add-form form .thumbnails .thumbnail button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 111;
+  background-color: var(--blue-color);
+  color: var(--btn-text);
+}
+.add-form form .thumbnails .thumbnail button svg {
+  transition: .3s;
+}
+.add-form form .thumbnails .thumbnail button:hover svg {
+  color: var(--red-color);
+  transform: scale(1.2);
+}
+.add-form form > input {
+  width: 100%;
+}
+.add-form form .form-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+.add-form form .form-inputs > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: calc(50% - 12px);
+}
+@media (max-width: 767px) {
+  .add-form form .form-inputs > div {
+    width: 100%;
+  }
+}
+.add-form form select,
+.add-form form input,
+.add-form form textarea {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  caret-color: var(--blue-color);
+}
+.add-form form select:focus,
+.add-form form textarea:focus,
+.add-form form input:focus {
+  outline: none;
+}
+.add-form form textarea {
+  height: 200px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+.add-form form .validation {
+  color: var(--red-color);
+}
+.add-form form button[type="submit"] {
+  width: fit-content;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: var(--btn-text);
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  border: none;
+}
+/* End add-form */
